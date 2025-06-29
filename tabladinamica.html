@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Recetas de cocina de Minecraft (versión Java). ¡Aprende a crear las recetas virtuales!"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Recetas de Cocina en Minecraft (Java)</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          class="logo-img"
+          src="images/logo.webp"
+          alt="Logo de Recetas Minecraft"
+        />
+      </div>
+      <div class="page-title">
+        <h1>Recetas de cocina en Minecraft</h1>
+        <p>(Version Java)</p>
+      </div>
+    </header>
+    <nav>
+      <div class="btn-menu"><a>MENÚ</a></div>
+      <ul class="nav-menu">
+        <a href="#"><li class="nav-menu-item">Inicio</li> </a>
+        <li class="nav-menu-item">
+          <span>Recetas</span>
+          <ul class="nav-sub-menu">
+            <li><a href="recetasnuevas.html">Recetas Nuevas</a></li>
+            <li><a href="recetasclasicas.html">Recetas Clasicas</a></li>
+            <li>
+              <a href="recetasreinventadas.html"
+                >Reinvenciones Creativas de Recetas Clásicas</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-menu-item">
+          <span>Contactos</span>
+          <ul class="nav-sub-menu">
+            <li><a href="formulario.html">Formulario de Contacto Profe</a></li>
+            <li>
+              <a
+                href="https://es-la.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://web.whatsapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Whatsapp</a
+              >
+            </li>
+          </ul>
+        </li>
+        <a href="#"><li class="nav-menu-item">Agregador</li> </a>
+      </ul>
+    </nav>
+    <main>
+      <section class="page-intro">
+        <h2 class="intro-title">Ayuda con las Recetas!!!</h2>
+        <p>Ayudanos a agregar las recetas faltantes.</p>
+      </section>
+      <section id="tabla-recetas">
+        <h2 class="title-table">Agregador De Recetas</h2>
+
+        <!-- Formulario para las recetas -->
+        <form id="form-receta" class="form-dinamica">
+          <div class="div-dinamica">
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              placeholder="Ej: Tarta de Calabaza"
+              required
+              class="input-dinamica"
+            />
+          </div>
+          <div class="div-dinamica">
+            <label for="ingredientes">Ingredientes:</label>
+            <input
+              type="text"
+              id="ingredientes"
+              placeholder="Ej: Calabaza, Huevo, Azúcar"
+              required
+              class="input-dinamica"
+            />
+          </div>
+          <div class="div-dinamica">
+            <label for="Hambre">Hambre:</label>
+            <input
+              type="number"
+              id="hambre"
+              placeholder="Ej: 3"
+              required
+              class="input-dinamica"
+            />
+          </div>
+          <div class="div-dinamica">
+            <label for="vida">Vida:</label>
+            <input
+              type="number"
+              id="vida"
+              placeholder="Ej: 4"
+              required
+              class="input-dinamica"
+            />
+          </div>
+          <div class="div-dinamica">
+            <label for="armadura">Armadura:</label>
+            <input
+              type="number"
+              id="armadura"
+              placeholder="Ej: 5"
+              required
+              class="input-dinamica"
+            />
+          </div>
+          <button type="submit" class="btn-dinamica">Agregar Receta</button>
+        </form>
+
+        <!-- Tabla dinamiica -->
+        <div class="table-container-dinamica">
+          <table id="tabla" class="table-dinamica">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Ingredientes</th>
+                <th>Hambre</th>
+                <th>Vida</th>
+                <th>Armadura</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="contacts">
+        <span>Contactanos</span>
+        <ul>
+          <li><a href="formulario.html">Formulario</a></li>
+          <li></li>
+          <li class="footer-item">
+            <a
+              href="https://es-la.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://web.whatsapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Whatsapp</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="logo">
+        <img
+          class="logo-img"
+          src="images/logo.webp"
+          alt="Logo de Recetas
+        Minecraft"
+        />
+      </div>
+    </footer>
+    <script src="js/dinamica.js"></script>
+    <script src="js/nav.js"></script>
+  </body>
+</html>

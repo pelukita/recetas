@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Recetas de cocina de Minecraft (versión Java). ¡Aprende a crear las recetas virtuales!"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Recetas de Cocina en Minecraft (Java)</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          class="logo-img"
+          src="images/logo.webp"
+          alt="Logo de Recetas Minecraft"
+        />
+      </div>
+      <div class="page-title">
+        <h1>Recetas de cocina en Minecraft</h1>
+        <p>(Version Java)</p>
+      </div>
+    </header>
+    <nav>
+      <div class="btn-menu"><a>MENÚ</a></div>
+      <ul class="nav-menu">
+        <a href="index.html"><li class="nav-menu-item">Inicio</li></a>
+        <li class="nav-menu-item">
+          <span>Recetas</span>
+          <ul class="nav-sub-menu">
+            <li><a href="recetasnuevas.html">Recetas Nuevas</a></li>
+            <li><a href="recetasclasicas.html">Recetas Clasicas</a></li>
+            <li>
+              <a href="recetasreinventadas.html"
+                >Reinvenciones Creativas de Recetas Clásicas</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-menu-item">
+          <span>Contactos</span>
+          <ul class="nav-sub-menu">
+            <li><a href="formulario.html">Formulario de Contacto Profe</a></li>
+            <li>
+              <a
+                href="https://es-la.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://web.whatsapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Whatsapp</a
+              >
+            </li>
+          </ul>
+        </li>
+        <a href="tabladinamica.html"
+          ><li class="nav-menu-item">Agregador</li>
+        </a>
+      </ul>
+    </nav>
+    <main>
+      <section class="page-intro">
+        <h2>Contactanos</h2>
+        <p>Llena este formulario y envianos un mensaje.</p>
+      </section>
+      <form id="contact-form" class="contact-form">
+        <!--------- Grupo Nombre Completo ------>
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Chayanne Gomez"
+            required
+          />
+        </div>
+
+        <!------ Grupo Email ----->
+        <div class="form-group">
+          <label for="email">Outlook</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tucorreo@chayanne.com"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+        </div>
+
+        <!-------- Grupo Mensaje --------->
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Te quiero chayanne!!!"
+            required
+          ></textarea>
+        </div>
+
+        <!----------- Capcha ---------->
+        <div class="form-group captcha-container">
+          <label>
+            Captcha :
+            <span id="captcha-text" class="captcha-text">a2k566ds</span>
+            <!-------- ACA se genra el codigo del capcha -------->
+          </label>
+          <div class="captcha-input">
+            <input
+              type="text"
+              id="captcha-input"
+              placeholder="Ingresa el código"
+              required
+            />
+            <button type="button" id="refresh-captcha" class="refresh-captcha">
+              ↻
+            </button>
+          </div>
+          <p id="captcha-error" class="error-message"></p>
+        </div>
+
+        <button type="submit" class="submit-btn">Enviar</button>
+      </form>
+    </main>
+    <footer>
+      <div class="contacts">
+        <span>Contactanos</span>
+        <ul>
+          <li><a href="formulario.html">Formulario</a></li>
+          <li></li>
+          <li class="footer-item">
+            <a
+              href="https://es-la.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://web.whatsapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Whatsapp</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="logo">
+        <img
+          class="logo-img"
+          src="images/logo.webp"
+          alt="Logo de Recetas
+        Minecraft"
+        />
+      </div>
+    </footer>
+    <script src="js/contact.js"></script>
+    <script src="js/nav.js"></script>
+  </body>
+</html>
